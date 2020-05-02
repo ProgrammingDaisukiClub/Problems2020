@@ -17,7 +17,7 @@ A-A-plus-B
 [A-J]-ハイフン区切り問題名
     statement.md
     PROBLEM
-    言語-解いた人の名前
+    言語-解いた人の名前-想定されるステータス(AC,WA,TLE)
         main.拡張子
         SOLUTION
 ```
