@@ -129,7 +129,7 @@ public class Main {
 
 # Answer Book[ブラウザ上での開発環境を使用する場合の例]
 ## step1: ページを開く
-初めに、　https://paiza.io/ja/projects/new　にアクセスします。
+初めに、　[paiza.io](https://paiza.io/ja/projects/new)　にアクセスします。
 そうするとこのような画面が表示されます。
 表示されたら、赤枠の中の緑色の部分にカーソルを合わせるかクリックをしましょう。
 
