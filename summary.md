@@ -1,12 +1,13 @@
 # Project Status
 
-このファイルは markdownify_full plugin により自動生成されています (rev.b473d57 fix: update README (add status notation), uploaded by emtsubasa @ DESKTOP-K8H6ARU)
+このファイルは markdownify_full plugin により自動生成されています (rev.167e827 add problem E:Helping, uploaded by emtsubasa @ DESKTOP-K8H6ARU)
 
 ## Summary
 
 問題|担当|解答|入力|出力|入検|出検
 :---|:---|:---|:---|:---|:---|:---
 E: Helping|tsubasa,kumachan| :large_blue_diamond: 1+0| :white_check_mark: 4| :x: 1/1| :x: | :wavy_dash: 
+F: JANKEN|tsubasa,reiya| :large_blue_diamond: 1+0| :white_check_mark: 4| :x: 1/1| :x: | :wavy_dash: 
 
 ## Environments
 
@@ -29,14 +30,28 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 OpenJDK Runtime Environment (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1)
 OpenJDK 64-Bit Server VM (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1, mixed mode, sharing)
 
+## Error Messages
+
+- WARNING:
+	- E-Helping/tests: Validator unavailable
+
 ## Detail
 
 ### E: Helping
 
 testcase|in|diff|md5|c tsubasa ac|Comments
 |:---|:---|:---|:---|:---|:---
-large|43465B|475B|`0555efa`| :white_check_mark: 0.01s|
+large|43465B|475B|`0555efa`| :white_check_mark: 0.02s|
 medium|11070B|242B|`edd4faa`| :white_check_mark: 0.01s|
 sample|35B|8B|`452d059`| :white_check_mark: 0.01s|
 small|206B|21B|`fcb4368`| :white_check_mark: 0.01s|
+
+### F: JANKEN
+
+testcase|in|diff|md5|c tsubasa ac|Comments
+|:---|:---|:---|:---|:---|:---
+large|30909B|900B|`704dcb2`| :white_check_mark: 0.01s|
+medium|7645B|417B|`67c607b`| :white_check_mark: 0.01s|
+sample|38B|12B|`db94f09`| :white_check_mark: 0.01s|
+small|153B|30B|`dc85695`| :white_check_mark: 0.01s|
 
