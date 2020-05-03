@@ -1,12 +1,12 @@
 # Project Status
 
-このファイルは markdownify_full plugin により自動生成されています (rev.6c3957d add randomtest for problem E,F, uploaded by emtsubasa @ DESKTOP-K8H6ARU)
+このファイルは markdownify_full plugin により自動生成されています (rev.428deeb change constraints.h in problem F(reduce N), uploaded by emtsubasa @ DESKTOP-K8H6ARU)
 
 ## Summary
 
 問題|担当|解答|入力|出力|入検|出検
 :---|:---|:---|:---|:---|:---|:---
-E: Helping|tsubasa,kumachan| :large_blue_diamond: 1+0| :white_check_mark: 14| :x: 1/1| :x: | :wavy_dash: 
+E: 人助け|tsubasa,kumachan| :large_blue_diamond: 1+0| :white_check_mark: 14| :x: 1/1| :x: | :wavy_dash: 
 F: JANKEN|tsubasa,reiya| :large_blue_diamond: 1+0| :white_check_mark: 14| :x: 1/1| :x: | :wavy_dash: 
 
 ## Environments
@@ -30,18 +30,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 OpenJDK Runtime Environment (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1)
 OpenJDK 64-Bit Server VM (build 11.0.6+10-post-Ubuntu-1ubuntu118.04.1, mixed mode, sharing)
 
-## Error Messages
-
-- WARNING:
-	- F-JANKEN/tests: Validator unavailable
-
 ## Detail
 
-### E: Helping
+### E: 人助け
 
 testcase|in|diff|md5|c tsubasa ac|Comments
 |:---|:---|:---|:---|:---|:---
-large|43465B|475B|`0555efa`| :white_check_mark: 0.01s|
+large|43465B|475B|`0555efa`| :white_check_mark: 0.02s|
 medium|11070B|242B|`edd4faa`| :white_check_mark: 0.01s|
 random test0|44053B|477B|`a0d4a77`| :white_check_mark: 0.01s|
 random test1|44506B|467B|`d24ebc1`| :white_check_mark: 0.01s|
@@ -63,14 +58,14 @@ testcase|in|diff|md5|c tsubasa ac|Comments
 large|89132B|920B|`13a620f`| :white_check_mark: 0.02s|
 medium|7645B|417B|`67c607b`| :white_check_mark: 0.01s|
 random test0|91480B|924B|`68be168`| :white_check_mark: 0.02s|
-random test1|87060B|913B|`b243437`| :white_check_mark: 0.01s|
+random test1|87060B|913B|`b243437`| :white_check_mark: 0.02s|
 random test2|91572B|926B|`87ae5d3`| :white_check_mark: 0.02s|
 random test3|91784B|922B|`67b7e7c`| :white_check_mark: 0.02s|
-random test4|89700B|928B|`c5fbb61`| :white_check_mark: 0.01s|
-random test5|90660B|919B|`64f1680`| :white_check_mark: 0.01s|
+random test4|89700B|928B|`c5fbb61`| :white_check_mark: 0.02s|
+random test5|90660B|919B|`64f1680`| :white_check_mark: 0.02s|
 random test6|92384B|923B|`63fc253`| :white_check_mark: 0.02s|
-random test7|91204B|917B|`7c9c996`| :white_check_mark: 0.01s|
-random test8|90176B|920B|`e534f4c`| :white_check_mark: 0.02s|
+random test7|91204B|917B|`7c9c996`| :white_check_mark: 0.02s|
+random test8|90176B|920B|`e534f4c`| :white_check_mark: 0.01s|
 random test9|88136B|915B|`525d303`| :white_check_mark: 0.02s|
 sample|38B|12B|`db94f09`| :white_check_mark: 0.01s|
 small|153B|30B|`dc85695`| :white_check_mark: 0.01s|
