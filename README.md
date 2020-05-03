@@ -1,6 +1,8 @@
 # Problems2020
 Problems for Waseda CS orientation 2020
 
+**[作業進捗MD](summary.md)**
+
 ## 命名規則等
 #### ブランチ名
 ```
@@ -31,3 +33,18 @@ feat(problem[A-J]): 問題名
 ```
 feat(problemA): A plus B
 ```
+
+## 担当
+
+| 問題名 | 難易度（仮） | 問題文・データセット | validator |
+|---------------------------|--------------|----------------------|-----------|
+| A: AtimesB | - | tomato(Answerbook) | - |
+| B: ジョウモン | - | suzu | shiro |
+| C: ロボットシミュレーション | - | reiya | suzu |
+| D: 情理バー(K>=2) | - | kumachan | shiro |
+| E: 人助け | - | tsubasa | kumachan |
+| F: じゃんけん | - | tsubasa | reiya |
+| G: 文字列問題 | - | yamad | tsubasa |
+| H: 履修登録 | - | shiro | yamad |
+| I: 未定 | - | - | - |
+| J: タタラ製鉄所 | - | shiro | tsubasa |
