@@ -18,10 +18,10 @@ $N$ 回指示を出した後、ロボットは最初のマスから何マス分�
 - 入力は全て整数である。
 ### Small
 $1 \leq N \leq $10
-$1 \leq X_i \leq $10
+$1 \leq X_i \leq $10  
 Smallではロボットが後退する指示は入力されない。
 
-### Medium
+### Large
 $1 \leq N \leq $100
 $-100 \leq X_i \leq $100
 
