@@ -5,7 +5,7 @@ int main(){
 	while(t--){
 		int d, w, a;
 		scanf("%d %d %d", &d, &w, &a);
-		if(d/(w*a)==1){
+		if(d/(w*a)==2){
 			printf("Yes\n");
 		}else{
 			printf("No\n");
