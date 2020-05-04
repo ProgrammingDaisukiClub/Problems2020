@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(){
-	int t;
-	scanf("%d", &t);
-	while(t--){
-		int d, w, a;
-		scanf("%d %d %d", &d, &w, &a);
-		if(d/(w*a)==2){
+	int T;
+	scanf("%d", &T);
+	while(T--){
+		int D, W, A;
+		scanf("%d %d %d", &D, &W, &A);
+		if(D == W * A * 2){
 			printf("Yes\n");
 		}else{
 			printf("No\n");
