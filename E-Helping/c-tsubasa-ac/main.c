@@ -9,7 +9,7 @@ int main() {
   while (t--) {
     bool res = true;
     scanf("%d", &k);
-    for (int i = 0; i < k; ++i) scanf("%d", &a[i]);
+    for (int i = 0; i < k; ++i) scanf("%d", &a[i + 1]);
     scanf("%d", &n);
     for (int i = 0; i < n; ++i) {
       int b;
