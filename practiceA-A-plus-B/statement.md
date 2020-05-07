@@ -52,7 +52,7 @@ int main() {
     while (t-- > 0){
         int a, b;
         scanf("%d %d", &a, &b);
-        int answer = 0; // EDIT HERE
+        int answer = a + b;
         printf("%d\n", answer);
     }
     return 0;
@@ -71,7 +71,8 @@ public class Main {
         for(int i=0; i < n; i++){
             int a = sc.nextInt();
             int b = sc.nextInt();
-            System.out.println(0); // EDIT HERE
+            int answer = a + b;
+            System.out.println(answer);
         }
         sc.close();
     }
