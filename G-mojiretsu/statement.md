@@ -28,7 +28,7 @@
  
 ## Large
 
-* $1 \leq N \leq 100$
+* $1 \leq N \leq 50$
 * $T = 100$
 
 # Input
