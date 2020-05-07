@@ -15,7 +15,7 @@ shiro君は人気な科目も取りたい一方、選外を避けて確実に科
 # Constraints
 - 入力はすべて整数である。
 - $1 \leq a_i \leq 1000 (1 \leq i \leq N)$
-- $1\leq X \leq \binom{N}{K}$
+- $1\leq X \leq {}_N C_K$
 ## Small
 - $T = 5$
 - $1 \leq K \leq N \leq 5$
