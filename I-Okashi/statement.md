@@ -33,7 +33,7 @@ $i$ 種類目 $(1 \leq i \leq N)$ のおかしの値段は $A_i$ 円で、それ
 
 * $1 \leq N \leq 100$
 * $1 \leq X \leq 10^18$
-* $1 \leq A_i \leq 500 (1 \leq i \leq N)$
+* $1 \leq A_i \leq 9999 (1 \leq i \leq N)$
 * $T = 100$
 
 # Input
