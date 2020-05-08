@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-int main() {
-    int n, k;
-    scanf("%d %d", &n, &k);
 
+int solve(int n, int k) {
     int joribar_nums = n;
     int joribar_bar_nums = 0;
     int ans = 0;
@@ -17,6 +15,16 @@ int main() {
         joribar_bar_nums -= joribar_nums*k;
         // trade-step
     }
-    printf("%d\n", ans);
+   return ans;
+}
+
+int main() {
+    int t; scanf("%d", &t);
+    while (t > 0) {
+        int n, k;
+        scanf("%d %d", &n, &k);
+        printf("%d\n", solve(n, k));
+        t--;
+    }
     return 0;
 }

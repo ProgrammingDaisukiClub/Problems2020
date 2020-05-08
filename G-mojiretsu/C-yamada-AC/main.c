@@ -12,9 +12,8 @@ int main() {
     scanf("%s", S);
 
     int found = 0;
-    for (int i = 0; i < N - 3; i++) {
-      if (S[i] == '2' && S[i + 1] == '5' && S[i + 1] == '5' &&
-          S[i + 1] == '5') {
+    for(int i = 0; i < N - 3; i++) {
+      if(S[i] == '2' && S[i + 1] == '5' && S[i + 2] == '2' && S[i + 3] == '0') {
         found = 1;
       }
     }

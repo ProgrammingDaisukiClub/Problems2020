@@ -1,6 +1,7 @@
 #include "constraints.h"
 #include "testlib.h"
-#include <bits/stdc++.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 int nCk(int n, int k) {
