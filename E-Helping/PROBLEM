@@ -1,0 +1,17 @@
+# -*- coding: utf-8; mode: python -*-
+
+pid='E'
+
+problem(
+  time_limit=1.0,
+  id=pid,
+  title=pid + ": 人助け",
+  wiki_name="-", # for wikify plugin
+  assignees=['tsubasa', 'kumachan'], # for wikify plugin
+  need_custom_judge=False, # for wikify plugin
+  reference_solution='c-tsubasa-ac',
+  )
+
+atcoder_config(
+  task_id=None # None means a spare
+)
