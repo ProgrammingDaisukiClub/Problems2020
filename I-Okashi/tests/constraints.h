@@ -1,0 +1,9 @@
+#define SMALL_T 5
+#define SMALL_MAX_N 10
+#define SMALL_MAX_X 100
+#define SMALL_MAX_A 10
+
+#define LARGE_T 100
+#define LARGE_MAX_N 200
+#define LARGE_MAX_X 1000000000000000000
+#define LARGE_MAX_A 9999
