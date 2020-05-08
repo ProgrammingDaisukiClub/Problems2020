@@ -1,11 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define inf (long long)(3e18)
 
 int t;
 long long n, y;
 long long a[128] = {};
-long long dp[2][512] = {};
+long long dp[2][10240] = {};
 
+int compare_ll(const void *a, const void *b) {
+  return *(long long *)a - *(long long *)b;
+}
 long long solve();
 
 int main() {
@@ -13,6 +17,7 @@ int main() {
   while (t--) {
     scanf("%lld %lld", &n, &y);
     for (int i = 0; i < n; ++i) scanf("%lld", &a[i]);
+    qsort(a, n, sizeof(long long), compare_ll);
     printf("%Ld\n", solve());
   }
   return 0;
