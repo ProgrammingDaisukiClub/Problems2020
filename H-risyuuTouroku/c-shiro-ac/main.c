@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int v[1 << 21];
+int v[1 << 12];
 
 int compare(const void *a, const void *b) {
     if(*(int *)a > *(int *)b) {
