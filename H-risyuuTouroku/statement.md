@@ -18,13 +18,13 @@ shiro君は人気な科目も取りたい一方、選外を避けて確実に科
 - $1\leq X \leq {}_N C_K$
 ## Small
 - $T = 5$
-- $1 \leq K \leq N \leq 5$
+- $1 \leq K \leq N \leq 3$
 ## Medium
 - $T = 25$
-- $1 \leq K \leq N \leq 10$
+- $1 \leq K \leq N \leq 7$
 ## Large
 - $T = 50$
-- $1 \leq K \leq N \leq 15$
+- $1 \leq K \leq N \leq 10$
 
 # Input
 1つの入力ファイルは複数のテストケースからなる。
