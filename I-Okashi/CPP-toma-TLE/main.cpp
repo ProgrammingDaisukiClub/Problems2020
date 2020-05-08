@@ -10,8 +10,8 @@ using ll = long long;
 // this solution order is
 // 
 // O(T*N*A^2)
-// if A<10^4, O(10^13) <- cannot end & memory exceeded
-// if A<3*10^3, O(10^12) <- about 10min & memory safe(this code is for this)
+// if A<10^4, O(10^12) <- cannot end & memory exceeded
+// if A<3*10^3, O(10^11) <- about 10min & memory safe(this code is for this)
 
 constexpr ll SIZE = 1e7;// >= A^2
 int main() {
