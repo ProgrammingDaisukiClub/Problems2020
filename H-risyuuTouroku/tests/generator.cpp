@@ -40,7 +40,7 @@ signed main(int argc, char *argv[]) {
     random("medium.in", 25, 4, 7, MIN_A, MAX_A);
     random("large.in", 50, 8, MAX_NK, MIN_A, MAX_A);
     for(int i = 0; i < 10; i++) {
-        random("random-test" + to_string(i) + ".in", 100, MIN_NK, MAX_NK, MIN_A,
+        random("random-test" + to_string(i) + ".in", 50, MIN_NK, MAX_NK, MIN_A,
                MAX_A);
     }
     return 0;
