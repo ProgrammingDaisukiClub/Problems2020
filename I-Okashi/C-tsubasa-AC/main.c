@@ -25,8 +25,6 @@ int main() {
 
 long long solve() {
   long long x = a[0];
-  for (int i = 0; i < n; ++i)
-    if (x > a[i]) x = a[i];
   for (int i = 1; i < x; ++i) dp[0][i] = inf;
   dp[0][0] = 0;
   int flg = 1;

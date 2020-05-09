@@ -60,17 +60,7 @@ long long solve() {
       if (dp[i]) return i;
     return -1;
   }
-  long long res = y + x;
-  for (int i = 0; i < n; ++i) {
-    long long now = a[i] * (y / a[i] + (y % a[i] != 0));
-    if (now < res) res = now;
-  }
-  for (int i = 0; i < n; ++i)
-    for (int j = i + 1; j < n; ++j) {
-      long long p = a[i], q = a[j];
-      long long g = GCD(p, q);
-      long long now = g * (y / g + (y % g != 0));
-      if (now < res) res = now;
-    }
-  return res;
+  long long now = a[0];
+  for (int i = 0; i < n; ++i) now = GCD(now, a[i]);
+  return now * (y / now + (y % now != 0));
 }
