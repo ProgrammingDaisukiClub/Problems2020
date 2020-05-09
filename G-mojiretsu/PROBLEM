@@ -3,7 +3,7 @@
 pid='G'
 
 problem(
-  time_limit=1.0,
+  time_limit=3.0,
   id=pid,
   title=pid + ": 文字列の問題",
   wiki_name="-", # for wikify plugin
