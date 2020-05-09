@@ -1,3 +1,7 @@
+const int MIN_T = 1;
+const int MIN_D = 1;
+const int MIN_W = 1;
+const int MIN_A = 1;
 const int SMALL_MAX_T = 10;
 const int LARGE_MAX_T = 100;
 const int SMALL_MAX_D = 10000;
