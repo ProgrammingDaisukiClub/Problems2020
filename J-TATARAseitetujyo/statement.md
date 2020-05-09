@@ -23,13 +23,23 @@ shiro君は完璧主義なので、できるだけ少ない移動時間でこの
 
 # Constraints
 
-- $1 \leq N \leq 20$
-- $1 \leq M \leq 20$
 - $N, M$は整数
 - $(1, i) (1 \leq i \leq M)$に“U”が書かれることはない。
 - $(i, 1) (1 \leq i \leq N)$に“L”が書かれることはない。
 - $(i, M) (1 \leq i \leq N)$に“R”が書かれることはない。
 - $(N, i) (1 \leq i \leq M)$に“D”が書かれることはない。
+
+## small
+- $T = 5$
+- $1 \leq N, M \leq 5$
+
+## medium
+- $T = 20$
+- $1 \leq N, M \leq 10$
+
+## large
+- $T = 50$
+- $1 \leq N, M \leq 20$
 
 # Input
 1つの入力ファイルは複数のテストケースからなる。
