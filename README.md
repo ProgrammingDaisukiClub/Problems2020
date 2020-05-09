@@ -41,7 +41,7 @@ feat(problemA): A plus B
 | A: AtimesB | - | tomato(Answerbook) | - | |
 | B: ジョウモン | - | suzu | shiro |  |
 | C: ロボットシミュレーション | - | reiya | suzu |  |
-| D: 情理バー(K>=2) | - | kumachan | shiro |  |
+| D: 情理バー(K>=2) | - | kumachan | tsubasa |  |
 | E: 人助け | - | tsubasa | kumachan |  |
 | F: じゃんけん | - | tsubasa | reiya |  |
 | G: 文字列問題 | - | yamad | tsubasa |  |
