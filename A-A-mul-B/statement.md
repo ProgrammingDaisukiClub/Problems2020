@@ -127,4 +127,4 @@ public class Main {
 （実行結果を`out.txt`に出力せずに画面に表示してしまうと、表示される内容が多すぎて、画面からコピーすることが難しいためです。）
 
 # Answer Book[ブラウザ上での開発環境を使用する場合の例]
-Practice ContestのA問題、A＋Bにおける同じ名前の章を参考にしてください。
+[Practice ContestのA問題、A＋B](https://wpcs2.herokuapp.com/contests/5/problems/19)における同じ名前の章を参考にしてください。
