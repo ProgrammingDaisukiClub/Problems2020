@@ -18,7 +18,7 @@ int main() {
     scanf("%lld %lld", &n, &y);
     for (int i = 0; i < n; ++i) scanf("%lld", &a[i]);
     qsort(a, n, sizeof(long long), compare_ll);
-    printf("%Ld\n", solve());
+    printf("%lld\n", solve());
   }
   return 0;
 }
