@@ -21,11 +21,6 @@
 * $1 \leq K, N \leq 10$
 * $T = 5$
 
-## Medium
-
-* $1 \leq K, N \leq 50$
-* $T = 50$
- 
 ## Large
 
 * $1 \leq K, N \leq 100$
