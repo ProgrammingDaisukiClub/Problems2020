@@ -28,7 +28,7 @@ typedef pair<ll, ll> P;
 #define mod 1000000007
 
 struct state {
-    int r;
+    long long r;
     long long d;
 };
 
@@ -64,7 +64,6 @@ void solve() {
 
     long long res = 0;
     rep(r, M) {
-
         long long rr = X % M;
         long long mx;
         if(rr < r) {

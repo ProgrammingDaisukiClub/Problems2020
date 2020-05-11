@@ -9,7 +9,7 @@ using namespace std;
 void check() {
   int N = inf.readInt(1, LARGE_MAX_N, "N");
   inf.readSpace();
-  long long X = inf.readLong(1LL, LARGE_MAX_X, "X");
+  long long X = inf.readLong(1LL, LARGE_MAX_M, "X");
   inf.readEoln();
   for (int i = 0; i < N; ++i) {
     if (i != 0) inf.readSpace();
