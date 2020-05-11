@@ -5,7 +5,7 @@ pid='J'
 problem(
   time_limit=60.0,
   id=pid,
-  title=pid + ": おかし",
+  title=pid + ": トレジャーハンター",
   wiki_name="-", # for wikify plugin
   assignees=['yamad', 'tsubasa'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin

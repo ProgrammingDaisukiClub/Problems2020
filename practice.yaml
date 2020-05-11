@@ -1,0 +1,8 @@
+contest_name: Practice Contest 2020ver
+problems:
+  - dir_name: practiceA-A-plus-B
+    data_sets:
+      - label: Small
+        score: 5
+      - label: Large
+        score: 5
