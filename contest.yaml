@@ -40,25 +40,29 @@ problems:
     data_sets:
       - label: Small
         score: 40
-      - label: Medium
-        score: 400
       - label: Large
-        score: 200
+        score: 600
   - dir_name: H-risyuuTouroku
     data_sets:
       - label: Small
         score: 50
+      - label: Medium
+        score: 300
       - label: Large
-        score: 700
+        score: 400
   - dir_name: I-TATARAseitetujyo
     data_sets:
       - label: Small
         score: 50
+      - label: Medium
+        score: 400
       - label: Large
-        score: 800
+        score: 400
   - dir_name: J-Okashi
     data_sets:
       - label: Small
         score: 50
+      - label: Medium
+        score: 500
       - label: Large
-        score: 800
+        score: 500
