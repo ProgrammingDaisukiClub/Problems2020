@@ -120,7 +120,7 @@ void large_generator(string filename, int T, int max_N, long long max_M, int max
 int main(int argc, char* argv[]) {
     registerGen(argc, argv, 1);
     random("small.in", SMALL_T, SMALL_MAX_N, SMALL_MAX_M, SMALL_MAX_A);
-    random("med.in", MEDIUM_T, MEDIUM_MAX_N, MEDIUM_MAX_M, MEDIUM_MAX_A);
+    random("medium.in", MEDIUM_T, MEDIUM_MAX_N, MEDIUM_MAX_M, MEDIUM_MAX_A);
     large_generator("large.in", LARGE_T, LARGE_MAX_N, LARGE_MAX_M, LARGE_MAX_A);
     for(int i = 0;i < 10; ++i) {
         large_generator("random-test" + to_string(i) + ".in", LARGE_T, LARGE_MAX_N, LARGE_MAX_M, LARGE_MAX_A);
