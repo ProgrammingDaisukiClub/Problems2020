@@ -33,10 +33,6 @@ shiro君は完璧主義なので、できるだけ少ない移動時間でこの
 - $T = 5$
 - $1 \leq N, M \leq 5$
 
-## medium
-- $T = 20$
-- $1 \leq N, M \leq 10$
-
 ## large
 - $T = 50$
 - $1 \leq N, M \leq 20$

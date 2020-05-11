@@ -184,7 +184,7 @@ void testcase_gen(string fname, int t, int min_nm, int max_nm) {
 signed main(int argc, char *argv[]) {
     registerGen(argc, argv, 1);
     testcase_gen("small.in", 5, MIN_NM, 5);
-    testcase_gen("medium.in", 20, 6, 10);
+    // testcase_gen("medium.in", 20, 6, 10);
     testcase_gen("large.in", 50, 11, MAX_NM);
     for(int i = 0; i < 10; i++) {
         testcase_gen("random-test" + to_string(i) + ".in", MAX_T, MIN_NM,
