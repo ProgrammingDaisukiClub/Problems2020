@@ -24,7 +24,7 @@ typedef pair<ll, ll> P;
 #define exist(x,y) (find(all(x),y)!=x.end())
 #define bcnt __builtin_popcountll
 
-#define INF 1e16
+#define INF (1e18+1)
 #define mod 1000000007
 
 struct state {
@@ -37,10 +37,10 @@ bool operator<(const state& a, const state& b) {
 }
 
 void solve() {
-    int N;
+    long long N;
     long long X;
     cin >> N >> X;
-    vector<int> A(N);
+    vector<long long> A(N);
     rep(i, N) {
         cin >> A[i];
     }
@@ -49,30 +49,30 @@ void solve() {
     uni(A);
 
     N = A.size();
-    int M = A[0];
+    long long M = A[0];
     priority_queue<state> que;
     que.push((state){0, 0});
-    vector<long long> dist(M, -1);
+    vector<long long> dist(M, INF);
     while(!que.empty()) {
         state s = que.top(); que.pop();
-        if(dist[s.r] != -1) continue;
+        if(dist[s.r] != INF) continue;
         dist[s.r] = s.d;
         repl(i, 1, N) {
             que.push((state){(s.r + A[i]) % M, s.d + A[i]});
         }
     }
 
-    long long res = X + M;
+    long long res = 0;
     rep(r, M) {
-        if(dist[r] == -1) continue;
 
-        if(dist[r] >= X) {
-            res = min(res, dist[r]);
-        }else{
-            long long val = (X / M) * M + r;
-            if(val < X) val += M;
-            res = min(res, val);
+        long long rr = X % M;
+        long long mx;
+        if(rr < r) {
+            mx = X - rr + r;
+        } else {
+            mx = X - rr + r + M;
         }
+        res += min(dist[r], mx) / M;
     }
     cout << res << endl;
 }
