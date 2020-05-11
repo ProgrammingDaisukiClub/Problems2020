@@ -46,10 +46,8 @@ problems:
     data_sets:
       - label: Small
         score: 50
-      - label: Medium
-        score: 300
       - label: Large
-        score: 400
+        score: 700
   - dir_name: I-TATARAseitetujyo
     data_sets:
       - label: Small
