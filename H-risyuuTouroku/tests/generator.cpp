@@ -1,6 +1,7 @@
 #include "constraints.h"
 #include "testlib.h"
-#include <bits/stdc++.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 int nCk(int n, int k) {
@@ -36,11 +37,11 @@ void random(string filename, int t, int min_nk, int max_nk, int min_a,
 
 signed main(int argc, char *argv[]) {
     registerGen(argc, argv, 1);
-    random("small.in", 5, MIN_NK, 5, MIN_A, MAX_A);
-    random("medium.in", 25, 6, 10, MIN_A, MAX_A);
-    random("large.in", 50, 11, MAX_NK, MIN_A, MAX_A);
+    random("small.in", 5, MIN_NK, 3, MIN_A, MAX_A);
+    random("medium.in", 25, 4, 7, MIN_A, MAX_A);
+    random("large.in", 50, 8, MAX_NK, MIN_A, MAX_A);
     for(int i = 0; i < 10; i++) {
-        random("random-test" + to_string(i) + ".in", 100, MIN_NK, MAX_NK, MIN_A,
+        random("random-test" + to_string(i) + ".in", 50, MIN_NK, MAX_NK, MIN_A,
                MAX_A);
     }
     return 0;

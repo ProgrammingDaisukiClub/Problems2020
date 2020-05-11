@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <fstream>
+#include <string>
 
 #include "constraints.h"
 #include "testlib.h"
@@ -7,10 +8,9 @@ using namespace std;
 void random(string fname, int t, int mink, int maxk, int minn, int maxn,
             int mina, int maxa);
 
-signed main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) {
   registerGen(argc, argv, 1);
   random("small.in", 5, MIN_K, 10, MIN_N, 10, MIN_A, MAX_A);
-  random("medium.in", 50, 25, 50, 25, 50, MIN_A, MAX_A);
   random("large.in", 100, 50, MAX_K, 50, MAX_N, MIN_A, MAX_A);
   for (int i = 0; i < 10; ++i)
     random("random-test" + to_string(i) + ".in", 100, MIN_K, MAX_K, MIN_N,

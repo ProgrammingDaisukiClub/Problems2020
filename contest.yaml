@@ -1,0 +1,64 @@
+contest_name: Waseda Orientation Programming Contest 2019
+problems:
+  - dir_name: A-A-mul-B
+    data_sets:
+      - label: Small
+        score: 5
+      - label: Large
+        score: 5
+  - dir_name: B-joumon
+    data_sets:
+      - label: Small
+        score: 10
+      - label: Large
+        score: 100
+  - dir_name: C-RobotSimu
+    data_sets:
+      - label: Small
+        score: 10
+      - label: Large
+        score: 100
+  - dir_name: D-jori-bar
+    data_sets:
+      - label: Small
+        score: 20
+      - label: Large
+        score: 200
+  - dir_name: E-Helping
+    data_sets:
+      - label: Small
+        score: 20
+      - label: Large
+        score: 200
+  - dir_name: F-JANKEN
+    data_sets:
+      - label: Small
+        score: 30
+      - label: Large
+        score: 300
+  - dir_name: G-mojiretsu
+    data_sets:
+      - label: Small
+        score: 40
+      - label: Medium
+        score: 400
+      - label: Large
+        score: 200
+  - dir_name: H-risyuuTouroku
+    data_sets:
+      - label: Small
+        score: 50
+      - label: Large
+        score: 700
+  - dir_name: I-TATARAseitetujyo
+    data_sets:
+      - label: Small
+        score: 50
+      - label: Large
+        score: 800
+  - dir_name: J-Okashi
+    data_sets:
+      - label: Small
+        score: 50
+      - label: Large
+        score: 800
