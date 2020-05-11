@@ -1,6 +1,6 @@
 # -*- coding: utf-8; mode: python -*-
 
-pid='I'
+pid='J'
 
 problem(
   time_limit=60.0,
