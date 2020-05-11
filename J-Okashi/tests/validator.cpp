@@ -11,9 +11,11 @@ void check() {
   inf.readSpace();
   long long X = inf.readLong(1LL, LARGE_MAX_M, "X");
   inf.readEoln();
+  vector<bool> ch(LARGE_MAX_A + 1, 0);
   for (int i = 0; i < N; ++i) {
     if (i != 0) inf.readSpace();
     int A = inf.readInt(1, LARGE_MAX_A, format("A[%d]", i));
+    ensuref(!ch[A], "unique");
   }
   inf.readEoln();
 }
