@@ -36,7 +36,7 @@ problems:
         score: 30
       - label: Large
         score: 300
-  - dir_name: G-mojiretsu
+  - dir_name: G-KoudoGouseisu
     data_sets:
       - label: Small
         score: 40
