@@ -68,7 +68,7 @@ RRR.
 ..
 2 3
 RRL
-…
+U..
 ```
 
 # Sample Output
