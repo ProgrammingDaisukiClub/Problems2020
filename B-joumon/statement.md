@@ -14,12 +14,12 @@
 - 入力は全て整数である.  
 - ダメージ計算式を満たす $K$ は必ず $1$ か $2$ に定まる.  
 ### Small
-- $1 \leq T \leq 10$
+- $T = 10$
 - $1 \leq D \leq 10^4$
 - $1 \leq W \leq 10^2$
 - $1 \leq A \leq 10^2$
 ### Large
-- $1 \leq T \leq 100$
+- $T = 100$
 - $1 \leq D \leq 10^9$
 - $1 \leq W \leq 10^5$
 - $1 \leq A \leq 10^4$
