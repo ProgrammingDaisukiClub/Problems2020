@@ -6,7 +6,7 @@
 
 int t;
 long long n, y;
-long long a[128] = {};
+long long a[256] = {};
 long long dp[2][10240] = {};
 
 int compare_ll(const void *a, const void *b) {
@@ -39,7 +39,7 @@ long long solve() {
           dp[flg][to] = dp[1 - flg][j] + a[i];
       }
       flg = 1 - flg;
-      if ((a[i] <<= 1LL) >= y) break;
+      if ((a[i] <<= 1LL) > y) break;
     }
   }
   long long answer = 0;

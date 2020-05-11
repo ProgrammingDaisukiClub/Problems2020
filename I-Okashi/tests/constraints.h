@@ -9,7 +9,7 @@
 #define MEDIUM_MAX_A 1000
 
 #define LARGE_T 100
-#define LARGE_MAX_N 200
+#define LARGE_MAX_N 100
 #define LARGE_MAX_M 1000000000000000000
 #define LARGE_MAX_A 9999
 
