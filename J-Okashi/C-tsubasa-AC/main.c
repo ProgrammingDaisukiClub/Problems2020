@@ -3,9 +3,9 @@
 #define inf (long long)(3e18)
 
 int t;
-long long n, y;
+long long n, m;
 long long a[128] = {};
-long long dp[2][10240] = {};
+long long dp[2][16384] = {};
 
 int compare_ll(const void *a, const void *b) {
   return *(long long *)a - *(long long *)b;
@@ -15,7 +15,7 @@ long long solve();
 int main() {
   scanf("%d", &t);
   while (t--) {
-    scanf("%lld %lld", &n, &y);
+    scanf("%lld %lld", &n, &m);
     for (int i = 0; i < n; ++i) scanf("%lld", &a[i]);
     qsort(a, n, sizeof(long long), compare_ll);
     printf("%lld\n", solve());
@@ -37,12 +37,15 @@ long long solve() {
           dp[flg][to] = dp[1 - flg][j] + a[i];
       }
       flg = 1 - flg;
-      if ((a[i] <<= 1) >= y) break;
+      if ((a[i] <<= 1) > m) break;
     }
   }
+  long long res = 0;
+  ++m;
   for (int i = 0; i < x; ++i) {
-    long long p = (y + i) % x;
-    if (dp[1 - flg][p] < y) return y + i;
+    long long now = m + (x + i - m % x) % x;
+    if (now > dp[1 - flg][i]) now = dp[1 - flg][i];
+    res += now / x;
   }
-  return -1;
+  return res;
 }
