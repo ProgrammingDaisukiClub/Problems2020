@@ -50,12 +50,11 @@ void random(string fname, int t, int mink, int maxk, int minn, int maxn,
     }
     of << endl;
     of << n << endl;
-    for (int i = 0; i < n; ++i) of << candy[i] + 1 << endl;
-    // for (int i = 0; i < n; ++i) {
-    //   if (i != 0) of << " ";
-    //   of << candy[i] + 1;
-    // }
-    // of << endl;
+    for (int i = 0; i < n; ++i) {
+      if (i != 0) of << " ";
+      of << candy[i] + 1;
+    }
+    of << endl;
   }
   of.close();
 }
