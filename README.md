@@ -38,13 +38,13 @@ feat(problemA): A plus B
 
 | 問題名 | 難易度（仮） | 問題文・データセット | validator | 備考,TODO |
 |---------------------------|--------------|----------------------|-----------|------|
-| A: AtimesB | - | tomato(Answerbook) | - | |
-| B: ジョウモン | - | suzu | shiro |  |
-| C: ロボットシミュレーション | - | reiya | suzu |  |
-| D: 情理バー(K>=2) | - | kumachan | tsubasa |  |
-| E: 人助け | - | tsubasa | kumachan |  |
-| F: じゃんけん | - | tsubasa | reiya |  |
-| G: 高度合成数 | - | yamad | tsubasa |  |
-| H: 履修登録 | - | shiro | yamad | サンプル説明、総和の重複について言及する |
-| J: タタラ製鉄所 | - | shiro | tsubasa | サンプル説明を書く |
-| I: トレジャーハンター | - | yamad | tsubasa | TLは1分,テストケース |
+| A: [AtimesB](./A-A-mul-B/statement.md) | - | tomato(Answerbook) | - | |
+| B: [ジョウモン](./B-joumon/statement.md) | - | suzu | shiro |  |
+| C: [ロボットシミュレーション](./C-RobotSimu/statement.md) | - | reiya | suzu |  |
+| D: [情理バー(K>=2)](./D-jori-bar/statement.md) | - | kumachan | tsubasa |  |
+| E: [人助け](./E-Helping/statement.md) | - | tsubasa | kumachan |  |
+| F: [じゃんけん](./F-JANKEN/statement.md) | - | tsubasa | reiya |  |
+| G: [高度合成数](./G-KoudoGouseisu/statement.md) | - | yamad | tsubasa |  |
+| H: [履修登録](./H-risyuuTouroku/statement.md) | - | shiro | yamad | サンプル説明、総和の重複について言及する |
+| I: [タタラ製鉄所](./I-TATARAseitetujyo/statement.md) | - | shiro | tsubasa | サンプル説明を書く |
+| J: [トレジャーハンター](./J-Okashi/statement.md) | - | yamad | tsubasa | TLは1分,テストケース |
