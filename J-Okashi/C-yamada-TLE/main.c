@@ -12,7 +12,7 @@ long long gcd(long long a, long long b){
 int t;
 long long n, y;
 long long a[128] = {};
-bool dp[m + 1] = {};
+bool dp[10000000 + 1] = {};
 
 int compare_ll(const void *a, const void *b) {
   return *(long long *)a - *(long long *)b;
