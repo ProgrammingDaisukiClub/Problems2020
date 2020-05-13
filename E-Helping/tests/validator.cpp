@@ -25,7 +25,8 @@ int main(int argc, char* argv[]) {
         inf.readEoln();
         for (int i = 0; i < N; i++) {
             int B = inf.readInt(1, K, "B");
-            inf.readEoln();
+            if (i != N - 1) inf.readSpace();
+            else            inf.readEoln();
         }
 
         T--;
