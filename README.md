@@ -43,7 +43,7 @@ feat(problemA): A plus B
 | C: [ロボットシミュレーション](./C-RobotSimu/statement.md) | - | reiya | suzu |  |
 | D: [情理バー(K>=2)](./D-jori-bar/statement.md) | - | kumachan | tsubasa |  |
 | E: [人助け](./E-Helping/statement.md) | - | tsubasa | kumachan |  |
-| F: [じゃんけん](./F-JANKEN/statement.md) | - | tsubasa | reiya |  |
+| F: [JANKEN](./F-JANKEN/statement.md) | - | tsubasa | reiya |  |
 | G: [高度合成数](./G-KoudoGouseisu/statement.md) | - | yamad | tsubasa |  |
 | H: [履修登録](./H-risyuuTouroku/statement.md) | - | shiro | yamad | サンプル説明、総和の重複について言及する |
 | I: [タタラ製鉄所](./I-TATARAseitetujyo/statement.md) | - | shiro | tsubasa | サンプル説明を書く |
