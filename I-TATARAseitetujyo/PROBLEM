@@ -3,7 +3,7 @@
 pid='I'
 
 problem(
-  time_limit=1.0,
+  time_limit=3.0,
   id=pid,
   title=pid + ": タタラ製鉄所",
   wiki_name="Your pukiwiki page name", # for wikify plugin

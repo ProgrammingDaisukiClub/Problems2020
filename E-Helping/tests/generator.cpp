@@ -24,15 +24,38 @@ void random(string fname, int t, int mink, int maxk, int minn, int maxn,
   of << t << endl;
   while (t--) {
     int k = rnd.next(max(mink, maxk / 2), maxk);
-    int n = rnd.next(max(minn, maxn / 2), maxn);
+    int n = rnd.next(max({2, minn, maxn / 2}), maxn);
     of << k << endl;
+    vector<int> a, candy, sum(k, 0);
+    bool ch = 0;
+    for (int i = 0; i < k; ++i) a.push_back(rnd.next(mina, maxa));
+    for (int i = 0; i < n; ++i) {
+      candy.push_back(rnd.next(0, k - 1));
+      ++sum[candy.back()];
+    }
+    if (rnd.next(0, 1) == 0 || (!ch && t == 0)) {
+      int id = rnd.next(0, n - 1), id2 = rnd.next(0, n - 1);
+      while (id == id2) id2 = rnd.next(0, n - 1);
+      if (candy[id] != candy[id2]) {
+        --sum[candy[id2]];
+        candy[id2] = candy[id];
+        ++sum[candy[id]];
+      }
+      id = candy[id];
+      a[id] = sum[id] - 1;
+    }
     for (int i = 0; i < k; ++i) {
       if (i != 0) of << " ";
-      of << rnd.next(mina, maxa);
+      of << a[i];
     }
     of << endl;
     of << n << endl;
-    while (n--) of << rnd.next(1, k) << endl;
+    for (int i = 0; i < n; ++i) of << candy[i] + 1 << endl;
+    // for (int i = 0; i < n; ++i) {
+    //   if (i != 0) of << " ";
+    //   of << candy[i] + 1;
+    // }
+    // of << endl;
   }
   of.close();
 }
