@@ -41,7 +41,7 @@ problems:
       - label: Small
         score: 40
       - label: Large
-        score: 600
+        score: 500
   - dir_name: H-risyuuTouroku
     data_sets:
       - label: Small
@@ -59,6 +59,6 @@ problems:
       - label: Small
         score: 50
       - label: Medium
-        score: 500
+        score: 700
       - label: Large
         score: 500
