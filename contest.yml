@@ -54,7 +54,7 @@ problems:
         score: 50
       - label: Large
         score: 800
-  - dir_name: J-Okashi
+  - dir_name: J-TreasureHunter
     data_sets:
       - label: Small
         score: 50

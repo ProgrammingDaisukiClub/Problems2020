@@ -40,17 +40,17 @@ $i$ 種類目 $(1 \leq i \leq N)$ のはしごの長さは $A_i$ メートルで
 
 ## Medium
 
-* $1 \leq N \leq 100$
+* $1 \leq N \leq 30$
 * $1 \leq M \leq 1000$
 * $1 \leq A_i \leq 1000 (1 \leq i \leq N)$
 * $T = 50$
 
 ## Large
 
-* $1 \leq N \leq 100$
+* $1 \leq N \leq 30$
 * $1 \leq M \leq 10^{18}$
-* $1 \leq A_i \leq 9999 (1 \leq i \leq N)$
-* $T = 100$
+* $1 \leq A_i \leq 30000 (1 \leq i \leq N)$
+* $T = 50$
 
 # Input
 1つの入力ファイルは複数のテストケースからなる。
