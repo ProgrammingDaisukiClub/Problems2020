@@ -3,7 +3,7 @@
 pid='J'
 
 problem(
-  time_limit=60.0,
+  time_limit=100.0,
   id=pid,
   title=pid + ": トレジャーハンター",
   wiki_name="-", # for wikify plugin
