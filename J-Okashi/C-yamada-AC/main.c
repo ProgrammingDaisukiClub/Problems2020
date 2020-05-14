@@ -7,7 +7,7 @@
 int t;
 long long n, y;
 long long a[256] = {};
-long long dp[2][10240] = {};
+long long dp[2][65536] = {};
 
 int compare_ll(const void *a, const void *b) {
   return *(long long *)a - *(long long *)b;

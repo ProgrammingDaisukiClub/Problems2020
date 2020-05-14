@@ -27,21 +27,22 @@ void large_generator(string filename, int T, int max_N, long long max_M,
   ofstream of(filename);
   of << T << endl;
 
-  // 90 cases : smallest_A >= 9000 and N >= 190 and M >= 10^17 (TLE)
-  for (int i = 0; i < 90; i++, T--) {
-    int N = rnd.next(max_N - 10, max_N);
+  // 40 cases : smallest_A >= 29000 and N == 30 and M >= 10^17 (TLE)
+  const int smallest_A = 29000;
+  for (int i = 0; i < 40; i++, T--) {
+    int N = max_N;
     long long M = rnd.next(100000000000000000LL, max_M);
     of << N << " " << M << endl;
 
     vector<int> A;
     vector<bool> used(max_A + 1, false);
 
-    int crt_A = rnd.next(9000, max_A);
+    int crt_A = rnd.next(smallest_A, max_A);
     used[crt_A] = true;
     A.push_back(crt_A);
 
     while (A.size() < N) {
-      crt_A = rnd.next(9000, max_A);
+      crt_A = rnd.next(smallest_A, max_A);
       if (used[crt_A]) continue;
       used[crt_A] = true;
       A.push_back(crt_A);
@@ -85,8 +86,7 @@ void large_generator(string filename, int T, int max_N, long long max_M,
   int gcd_set[] = {3, 5, 13};
   for (int i = 0; i < 3; i++, T--) {
     vector<int> A;
-    for (int crt_A = gcd_set[i] * 500; A.size() < max_N && crt_A <= max_A;
-         crt_A += gcd_set[i]) {
+    for (int crt_A = gcd_set[i] * 500; A.size() < max_N && crt_A <= max_A; crt_A += gcd_set[i]) {
       A.push_back(crt_A);
     }
 

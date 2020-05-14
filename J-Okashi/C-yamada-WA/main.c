@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #define inf (long long)(3e18)
 
-const int m = 30000 * 30000;
+const int m = 30000 * 30000 / 10; // hack
 
 long long gcd(long long a, long long b){
   return b ? gcd(b,a%b) : a;
