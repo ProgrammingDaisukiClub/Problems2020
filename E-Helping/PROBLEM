@@ -3,7 +3,7 @@
 pid='E'
 
 problem(
-  time_limit=1.0,
+  time_limit=3.0,
   id=pid,
   title=pid + ": 人助け",
   wiki_name="-", # for wikify plugin

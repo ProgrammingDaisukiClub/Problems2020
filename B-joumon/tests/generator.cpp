@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <string>
+#include <fstream>
 #include "constraints.h"
 #include "testlib.h"
 
@@ -6,7 +7,8 @@ using namespace std;
 
 void random(string filename, int max_T, int max_D, int max_W, int max_A){
     ofstream of(filename);
-    int T = rnd.next(1, max_T);
+    // int T = rnd.next(1, max_T);
+    int T = max_T;
     of << T << endl;
     int D, W, A, K;
     while(T--){
@@ -32,7 +34,7 @@ signed main(int argc, char* argv[]){
     random("small.in", SMALL_MAX_T, SMALL_MAX_D, SMALL_MAX_W, SMALL_MAX_A);
     random("large.in", LARGE_MAX_T, LARGE_MAX_D, LARGE_MAX_W, LARGE_MAX_A);
     for(int i=0;i<10;++i){
-        random("random-test" + to_string(i) + ".in", LARGE_MAX_T, LARGE_MAX_D, LARGE_MAX_W, LARGE_MAX_A);
+        random("random-test" + to_string(i) + ".in", rnd.next(1, LARGE_MAX_T), LARGE_MAX_D, LARGE_MAX_W, LARGE_MAX_A);
     }
     return 0;
 }

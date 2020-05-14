@@ -3,7 +3,7 @@
 pid='H'
 
 problem(
-  time_limit=1.0,
+  time_limit=3.0,
   id=pid,
   title=pid + ": 履修登録",
   wiki_name="-", # for wikify plugin
