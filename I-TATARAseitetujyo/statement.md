@@ -94,7 +94,7 @@ DL4L
 RR56
 ```
 移動時間は6分で、これが最短です。この他にも、   
-$(1,1) \rightarrow (2, 1) \rightarrow (3, 1) \rightarrow (4, 1) \rightarrow (4, 2)　\rightarrow (4, 3) \rightarrow (4, 4)$  
+$(1,1) \rightarrow (2, 1) \rightarrow (3, 1) \rightarrow (4, 1) \rightarrow (4, 2) \rightarrow (4, 3) \rightarrow (4, 4)$  
 というルートも移動時間は6分です。   
 ```
 0D..
