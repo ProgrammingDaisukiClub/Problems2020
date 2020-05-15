@@ -24,18 +24,12 @@ long long GCD(long long left, long long right) {
   return ansgcd;
 }
 
-long long LCM(long long left, long long right) {
-  return left / GCD(left, right) * right;
-}
-
 int t;
 long long n, y;
-long long a[128] = {};
+long long a[32] = {};
 bool dp[10000000] = {};
 
-int compare_ll(const void *a, const void *b) {
-  return *(long long *)a - *(long long *)b;
-}
+long long min(const long long x, const long long y) { return x < y ? x : y; }
 long long solve();
 
 int main() {
@@ -43,24 +37,20 @@ int main() {
   while (t--) {
     scanf("%lld %lld", &n, &y);
     for (int i = 0; i < n; ++i) scanf("%lld", &a[i]);
-    qsort(a, n, sizeof(long long), compare_ll);
     printf("%lld\n", solve());
   }
   return 0;
 }
 
 long long solve() {
-  long long x = a[0];
-  if (y + x <= 10000000) {
-    for (int i = 0; i <= y + x; ++i) dp[i] = false;
-    dp[0] = true;
-    for (int i = 0; i < n; ++i)
-      for (int j = a[i]; j <= y + x; ++j) dp[j] |= dp[j - a[i]];
-    for (long long i = y; i <= y + x; ++i)
-      if (dp[i]) return i;
-    return -1;
-  }
-  long long now = a[0];
-  for (int i = 0; i < n; ++i) now = GCD(now, a[i]);
-  return now * (y / now + (y % now != 0));
+  long long p = min(y, 10000000), g = a[0];
+  for (int i = 0; i < n; ++i) g = GCD(g, a[i]);
+  for (int i = 0; i <= p; ++i) dp[i] = false;
+  dp[0] = true;
+  for (int i = 0; i < n; ++i)
+    for (int j = a[i]; j <= p; ++j) dp[j] |= dp[j - a[i]];
+  long long res = 0;
+  for (int i = 1; i <= p; ++i)
+    if (dp[i]) ++res;
+  return y - res - (y / g - p / g);
 }
