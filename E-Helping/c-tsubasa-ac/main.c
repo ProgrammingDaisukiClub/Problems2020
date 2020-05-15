@@ -1,22 +1,24 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-int t, n, k;
+int t, n, k, b;
 int a[128] = {};
 
 int main() {
   scanf("%d", &t);
   while (t--) {
-    bool res = true;
     scanf("%d", &k);
-    for (int i = 0; i < k; ++i) scanf("%d", &a[i + 1]);
+    bool ok = true;  // trueなら”wa-i”,falseなら”e-n”
+    for (int i = 1; i <= k; i++)
+      scanf("%d", &a[i]);  // a[i] :手持ちの i番目のキャンディーの個数
     scanf("%d", &n);
-    for (int i = 0; i < n; ++i) {
-      int b;
+    for (int i = 0; i < n; i++) {
       scanf("%d", &b);
-      if (--a[b] < 0) res = false;
+      a[b] = a[b] - 1;  //おねだりされたので手持ちの個数が1つ減る
+      if (a[b] < 0)
+        ok = false;  //負になっていたらおねだりに応えられなかったということ
     }
-    if (res)
+    if (ok)
       printf("wa-i\n");
     else
       printf("e-n\n");

@@ -4,8 +4,8 @@
 
 int t;
 long long n, m;
-long long a[128] = {};
-long long dp[2][65536] = {};
+long long a[32] = {};
+long long dp[2][32768] = {};
 
 int compare_ll(const void *a, const void *b) {
   return *(long long *)a - *(long long *)b;

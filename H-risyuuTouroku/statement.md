@@ -15,10 +15,12 @@ shiro君は人気な科目も取りたい一方、選外を避けて確実に科
 # Constraints
 - 入力はすべて整数である。
 - $1 \leq a_i \leq 1000 (1 \leq i \leq N)$
-- $1\leq X \leq {}_N C_K$
+- $1 \leq X \leq {}_N C_K $
+
 ## Small
 - $T = 5$
 - $1 \leq K \leq N \leq 3$
+
 ## Large
 - $T = 50$
 - $1 \leq K \leq N \leq 10$
@@ -31,9 +33,8 @@ shiro君は人気な科目も取りたい一方、選外を避けて確実に科
 2行目以降には、$T$ 個のテストケースが記述されており、各テストケースは次の形式で表される。
 
 ```
-$N K X$
-
-$a_1, a_2, … , a_i, a_{i+1}, … , a_n$
+$N$ $K$ $X$
+$a_1$ $a_2$ $\ldots$ $a_i$ $a_{i+1}$ $\ldots$ $a_n$
 ```
 
 # Output
