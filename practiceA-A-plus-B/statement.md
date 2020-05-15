@@ -106,9 +106,9 @@ public class Main {
     ```
     ./a.out < in.txt > out.txt
     ```
-    PowerShellの場合
+    PowerShellの場合(拡張子がoutの場合は動かないため注意してください)
     ```
-    cat in.txt | ./a.out > out.txt
+    cat in.txt | ./a.exe > out.txt
     ```
 
 ## Java
