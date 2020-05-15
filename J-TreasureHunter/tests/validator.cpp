@@ -16,6 +16,7 @@ void check() {
     if (i != 0) inf.readSpace();
     int A = inf.readInt(1, LARGE_MAX_A, format("A[%d]", i));
     ensuref(!ch[A], "unique");
+    ch[A] = 1;
   }
   inf.readEoln();
 }
