@@ -1,6 +1,6 @@
 # Description
 
-shiro君はゲームが好きです。shiro君はあるダンジョンをクリアしたいです。そのダンジョンは、**$N \times M$のグリッド**になっています。  
+shiro君はゲームが好きです。shiro君はあるダンジョンをクリアしたいです。そのダンジョンは、**縦$N$、横$M$のグリッド**になっています。  
 グリッドは、左上のマスが $(1, 1)$ 、右下のマスが $(N, M)$ という座標で表されます。  
 上から $r$ 行目、左から $c$ 列目のマス目の座標は $(r, c)$ です。
 
@@ -83,8 +83,8 @@ kusoge-
 
 入力例は3つのテストケースからなります。
 
-- 1つめのケースについて、例えば以下のようなルートがあります。  
-$(1,1) \rightarrow (1, 2) \rightarrow (2, 2) \rightarrow (2, 3) \rightarrow (3, 3)　\rightarrow (4, 3) \rightarrow (4, 4)$  
+1つめのケースについて、例えば以下のようなルートがあります。  
+$(1,1) \rightarrow (1, 2) \rightarrow (2, 2) \rightarrow (2, 3) \rightarrow (3, 3) \rightarrow (4, 3) \rightarrow (4, 4)$  
 各マスについて訪れた時間を振っていくと、以下のようになります。  
 ```
 01..
@@ -93,7 +93,7 @@ DL4L
 RR56
 ```
 移動時間は6分で、これが最短です。この他にも、   
-$(1,1) \rightarrow (2, 1) \rightarrow (3, 1) \rightarrow (4, 1) \rightarrow (4, 2)　\rightarrow (4, 3) \rightarrow (4, 4)$  
+$(1,1) \rightarrow (2, 1) \rightarrow (3, 1) \rightarrow (4, 1) \rightarrow (4, 2) \rightarrow (4, 3) \rightarrow (4, 4)$  
 というルートも移動時間は6分です。   
 ```
 0D..
@@ -102,9 +102,9 @@ $(1,1) \rightarrow (2, 1) \rightarrow (3, 1) \rightarrow (4, 1) \rightarrow (4, 
 3456
 ```
 
-- 2つめのテストケースのように、“L”, “R”, “U”, “D”からなるマスが1つも存在しないパターンもあります。   
+2つめのテストケースのように、“L”, “R”, “U”, “D”からなるマスが1つも存在しないパターンもあります。   
 
-- 3つめのテストケースでは、
+3つめのテストケースでは、
 $(1,1) \rightarrow (1, 2) \rightarrow (1, 3) \rightarrow (1, 2) \rightarrow (1, 3)\ldots$  
 のように、 $(1, 3)$ と $(1, 2)$ を行き来し続けることになり、ループしてしまいます。   
 よって、ゲームをクリアすることができないため、クソゲーです。  
