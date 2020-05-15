@@ -24,7 +24,7 @@ typedef pair<ll, ll> P;
 #define exist(x,y) (find(all(x),y)!=x.end())
 #define bcnt __builtin_popcountll
 
-#define INF (1e18+1)
+#define INF (3e18)
 #define mod 1000000007
 
 struct state {
