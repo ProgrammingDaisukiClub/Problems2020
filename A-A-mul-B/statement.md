@@ -98,8 +98,15 @@ public class Main {
 
 1. キーボード入力の代わりに`in.txt`を読み込んで、実行結果を`out.txt`に出力するように、プログラムを実行する
 
+   ※ 実行ファイルと入力ファイルが同一ディレクトリにある必要があります
+
+    コマンドプロンプトなどの場合
     ```
     ./a.out < in.txt > out.txt
+    ```
+    PowerShellの場合
+    ```
+    cat in.txt | ./a.out > out.txt
     ```
 
 ## Java
@@ -111,9 +118,16 @@ public class Main {
     ```
 
 1. キーボード入力の代わりに`in.txt`を読み込んで、実行結果を`out.txt`に出力するように、プログラムを実行する
-    
+ 
+   ※ 実行ファイルと入力ファイルが同一ディレクトリにある必要があります
+
+    コマンドプロンプトなどの場合
     ```
     java Main < in.txt > out.txt
+    ```
+    PowerShellの場合
+    ```
+    cat in.txt | java Main > out.txt
     ```
 
 ## C++ / Python / Ruby / 他
