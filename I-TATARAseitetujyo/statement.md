@@ -32,11 +32,11 @@ shiro君は完璧主義なので、できるだけ少ない移動時間でこの
 - $(i, M) (1 \leq i \leq N)$に“R”が書かれることはない。
 - $(N, i) (1 \leq i \leq M)$に“D”が書かれることはない。
 
-## small
+## Small
 - $T = 5$
 - $1 \leq N, M \leq 5$
 
-## large
+## Large
 - $T = 50$
 - $1 \leq N, M \leq 20$
 
