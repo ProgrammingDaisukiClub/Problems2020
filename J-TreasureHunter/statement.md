@@ -34,24 +34,24 @@ $i$ 種類目 $(1 \leq i \leq N)$ のはしごの長さは $A_i$ メートルで
 
 ## Small
 
-* $1 \leq N \leq 10$
-* $1 \leq M \leq 10$
-* $1 \leq A_i \leq 10 (1 \leq i \leq N)$
-* $T = 5$
+* $1 \leq N \leq {{ SMALL_MAX_N }}$
+* $1 \leq M \leq {{ SMALL_MAX_M }}$
+* $1 \leq A_i \leq {{ SMALL_MAX_A }} (1 \leq i \leq N)$
+* $T = {{ SMALL_T }}$
 
 ## Medium
 
-* $1 \leq N \leq 30$
-* $1 \leq M \leq 1000$
-* $1 \leq A_i \leq 1000 (1 \leq i \leq N)$
-* $T = 50$
+* $1 \leq N \leq {{ MEDIUM_MAX_N }}$
+* $1 \leq M \leq {{ MEDIUM_MAX_M }}$
+* $1 \leq A_i \leq {{ MEDIUM_MAX_A }} (1 \leq i \leq N)$
+* $T = {{ MEDIUM_T }}$
 
 ## Large
 
-* $1 \leq N \leq 30$
-* $1 \leq M \leq 10^{18}$
-* $1 \leq A_i \leq 30000 (1 \leq i \leq N)$
-* $T = 50$
+* $1 \leq N \leq {{ LARGE_MAX_N }}$
+* $1 \leq M \leq {{ LARGE_MAX_M }}$
+* $1 \leq A_i \leq {{ LARGE_MAX_A }} (1 \leq i \leq N)$
+* $T = {{ LARGE_T }}$
 
 # Input
 1つの入力ファイルは複数のテストケースからなる。
@@ -68,29 +68,8 @@ $A_1$ $A_2$ $\ldots$ $A_N$
 # Output
 各テストケースに対して、すず君がどのように崖を登ったとしても手に入れることができないお宝の数を1行で出力せよ。
 
-# Sample Input
-```
-5
-1 5
-2
-2 5
-2 3
-1 10
-1
-5 1000
-41 64 124 356 782
-1 1000000000000000000
-100
-```
+{{ sample }}
 
-# Sample Output
-```
-3
-1
-0
-444
-990000000000000000
-```
 入力例は5つのテストケースからなります。
 
 1つめのテストケースでは、すず君は1種類のはしごを所持しており、長さは $2$ メートルです。また、崖には地上 $1$ メートル地点から、 $5$ メートル地点までの間にお宝が存在しています。このはしごを使って登ることができるのは、地上 $2$ メートル地点と $4 (= 2 + 2)$ メートル地点のみです。 $1$ , $3$ , $5$ メートル地点にちょうど訪れることはできないため、「どのように崖を登ったとしても手に入れることができないお宝の数」は $3$ 個です。
